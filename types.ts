@@ -1,4 +1,4 @@
-import { RotaSearchParamsFilter } from '../../hooks/rotaSearchParams/types';
+import { SearchParamsFilter } from '../../hooks/searchParams/types';
 
 export type OperatorsType = {
   [key: string]: 'or' | 'and';
@@ -30,5 +30,5 @@ export interface FilterBuilderProps<TRowData> {
   condition: ConditionType;
   setCondition: (ConditionType) => void;
   methods: any;
-  defaultSearchParams?: RotaSearchParamsFilter<Partial<TRowData>>;
+  defaultSearchParams?: SearchParamsFilter<Partial<TRowData>>;
 }
